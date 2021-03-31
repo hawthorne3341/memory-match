@@ -22,4 +22,6 @@ server.get("/", (req, res) => {
   `);
 });
 
-server.listen(7523, () => console.log("Server is running..."));
+server.listen(process.env.PORT || 7523, () =>
+  console.log("Server is running...")
+);
