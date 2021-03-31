@@ -10,8 +10,8 @@
 
 .game-board {
   display: grid;
-  height: 600px;
-  width: 600px;
+  height: 550px;
+  width: 550px;
 }
 
 .game-controls {
@@ -23,6 +23,10 @@
 
 .btn-group {
   display: flex;
+}
+
+.source-link {
+  margin-top: 15px;
 }
 
 .cell,

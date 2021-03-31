@@ -40,6 +40,15 @@ const MemoryMatch = () => {
         boardWidth={boardWidth}
         resizeBoard={resizeBoard}
       />
+      <span className="source-link">
+        <a
+          href="https://github.com/hawthorne3341/memory-match"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source
+        </a>
+      </span>
     </div>
   );
 };
