@@ -22,4 +22,4 @@ server.get("/", (req, res) => {
   `);
 });
 
-server.listen(7523, () => console.log("Server is running..."));
+server.listen(7523, () => console.log("Server is running on port 7523"));
