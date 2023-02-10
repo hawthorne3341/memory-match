@@ -1,16 +1,16 @@
 {
-  "name": "memorymatch",
+  "name": "memory-match",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "npm-run-all -p server bundler",
+    "start": "npm-run-all -p server build",
     "server": "babel-node src/server/index.js --ignore dist/",
-    "bundler": "webpack -w",
-    "dev:start": "npm-run-all -p dev:server dev:bundler",
+    "build": "webpack --mode=production",
+    "dev:start": "npm-run-all -p dev:server dev:build",
     "dev:server": "nodemon --exec babel-node src/server/index.js --ignore dist/",
-    "dev:bundler": "webpack -w --mode=development"
+    "dev:build": "webpack -w --mode=development"
   },
   "author": "",
   "license": "ISC",
